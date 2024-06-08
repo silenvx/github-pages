@@ -37,7 +37,7 @@ jobs:
             - name: アーティファクトの作成
               uses: actions/upload-pages-artifact@v3
               with:
-                path: ./out
+                path: ./nextjs-deploy/out
 
     deploy:
         environment:
