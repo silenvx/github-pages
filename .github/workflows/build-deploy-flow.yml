@@ -25,7 +25,9 @@ jobs:
                 static_site_generator: next
 
             - name: 関係モジュールをインストール
-              run: npm ci
+              run: |
+                cd nextjs-deploy
+                npm ci
 
             - name: ビルドの実行
               run: npm run build
