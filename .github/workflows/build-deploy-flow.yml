@@ -30,7 +30,9 @@ jobs:
                 npm ci
 
             - name: ビルドの実行
-              run: npm run build
+              run: |
+                cd nextjs-deploy
+                npm run build
 
             - name: アーティファクトの作成
               uses: actions/upload-pages-artifact@v3
